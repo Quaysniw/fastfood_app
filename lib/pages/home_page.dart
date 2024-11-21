@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:gelmedenal/tab/burger_tab.dart';
 import 'package:gelmedenal/tab/donut_tab.dart';
-import 'package:gelmedenal/tab/pancake_tab.dart';
+import 'package:gelmedenal/tab/waffle_tab.dart';
 import 'package:gelmedenal/tab/pizza_tab.dart';
 import 'package:gelmedenal/tab/smoothie_tab.dart';
-import 'package:gelmedenal/util/my_tab.dart';
+import 'package:gelmedenal/util/tab_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -16,37 +16,37 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
 
   // my tabs
-  List<Widget> myTabs = const [
+  List<Widget> urunTab = const [
     // donut tab
-    MyTab(
-      iconPath: 'lib/icons/donut.png',
+    TabWidget(
+      iconPath: 'assets/icons/urunler/donut.png',
     ),
 
     // burger tab
-    MyTab(
-      iconPath: 'lib/icons/burger.png',
+    TabWidget(
+      iconPath: 'assets/icons/urunler/burger.png',
     ),
 
     // smoothie tab
-    MyTab(
-      iconPath: 'lib/icons/smoothie.png',
+    TabWidget(
+      iconPath: 'assets/icons/urunler/smoothie.png',
     ),
 
-    // pancake tab
-    MyTab(
-      iconPath: 'lib/icons/pancakes.png',
+    // pan tab
+    TabWidget(
+      iconPath: 'assets/icons/urunler/pancakes.png',
     ),
 
     // pizza tab
-    MyTab(
-      iconPath: 'lib/icons/pizza.png',
+    TabWidget(
+      iconPath: 'assets/icons/urunler/pizza.png',
     ),
   ];
 
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: myTabs.length,
+      length: urunTab.length,
       child: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.transparent,
@@ -74,7 +74,7 @@ class _HomePageState extends State<HomePage> {
                   size: 36,
                 ),
                 onPressed: () {
-                  // Hesap butonuna tıklanıldı
+                  // Hesap butonuna tıklama işlemi
                 },
               ),
             ),
@@ -83,15 +83,15 @@ class _HomePageState extends State<HomePage> {
         body: Column(
           children: [
           // ne yemek istersin
-          Padding(
-            padding: const EdgeInsets.symmetric(
+          const Padding(
+            padding: EdgeInsets.symmetric(
               horizontal: 32.0,
               vertical: 18,
             ),
             child: Row(
               children: [
                 Text(
-                  'Ne yemek istersin?',
+                  'Ne yemek istersiniz?',
                   style: TextStyle(fontSize: 24),
                 ),
                 Text(
@@ -108,25 +108,25 @@ class _HomePageState extends State<HomePage> {
           const SizedBox(height: 24),
 
           // tab bar
-          TabBar(tabs: myTabs),
+          TabBar(tabs: urunTab),
       
-          // tab bar view
+          // tab bar görünümü
           Expanded(
             child: TabBarView(
               children: [
-                // donut page
+                // donut sayfası
                 DonutTab(),
 
-                // burger page
+                // burger sayfası
                 BurgerTab(),
 
-                // smoothie page
+                // smoothie sayfası
                 SmoothieTab(),
 
-                // pancake page
-                PancakeTab(),
+                // pancake sayfası
+                WaffleTab(),
 
-                // pizza page
+                // pizza sayfası
                 PizzaTab(),
               ],
             ),

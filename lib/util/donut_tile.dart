@@ -1,20 +1,20 @@
 import 'package:flutter/material.dart';
 
-class DonutTile extends StatelessWidget {
-  final String donutFlavor;
-  final String donutPrice;
-  final String imageName;
-  final donutColor;
+class DonutListe extends StatelessWidget {
+  final donutRenk;
+  final String donutCesit;
+  final String donutFiyat;
+  final String donutGorsel;
 
-  final double borderRadius = 12;
+  final double kenarYumusaklik = 12;
 
-  const DonutTile({
+  const DonutListe({
     super.key,
-    required this.donutFlavor,
-    required this.donutPrice,
-    required this.donutColor,
-    required this.imageName,
-    });
+    required this.donutRenk,
+    required this.donutCesit,
+    required this.donutFiyat,
+    required this.donutGorsel,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -22,8 +22,8 @@ class DonutTile extends StatelessWidget {
       padding: const EdgeInsets.all(12.0),
       child: Container(
         decoration: BoxDecoration(
-          color: donutColor[50],
-          borderRadius: BorderRadius.circular(borderRadius),
+          color: donutRenk[50],
+          borderRadius: BorderRadius.circular(kenarYumusaklik),
         ),
         child: Column(
           children: [
@@ -33,17 +33,17 @@ class DonutTile extends StatelessWidget {
               children: [
                 Container(
                   decoration: BoxDecoration(
-                    color: donutColor[100],
+                    color: donutRenk[100],
                     borderRadius: BorderRadius.only(
-                      bottomLeft: Radius.circular(borderRadius),
-                      topRight: Radius.circular(borderRadius),
+                      bottomLeft: Radius.circular(kenarYumusaklik),
+                      topRight: Radius.circular(kenarYumusaklik),
                     ),
                   ),
-                  padding: EdgeInsets.all(12),
+                  padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$donutPrice',
+                    '\₺$donutFiyat',
                     style: TextStyle(
-                      color: donutColor[800],
+                      color: donutRenk[800],
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
@@ -52,19 +52,19 @@ class DonutTile extends StatelessWidget {
               ],
             ),
 
-            // donat resmi
+            // donut resmi
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 50.0,
                 vertical: 25,
               ),
-              child: Image.asset(imageName),
+              child: Image.asset(donutGorsel),
             ),
 
-            // donut flavor
+            // donut çeşidi
             Text(
-              donutFlavor,
-              style: TextStyle(
+              donutCesit,
+              style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,
               ),
@@ -77,13 +77,13 @@ class DonutTile extends StatelessWidget {
               style: TextStyle(color: Colors.grey[600]),
             ),
 
-            // favori icon + ekle button
+            // favori ikon + ekle button
             Padding(
               padding: const EdgeInsets.all(12.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  // favori icon
+                  // favori ikon
                   Icon(
                     Icons.favorite,
                     color: Colors.pink[400],
