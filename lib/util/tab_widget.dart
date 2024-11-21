@@ -12,12 +12,12 @@ class TabWidget extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(12),
         decoration: BoxDecoration(
-          color: Colors.grey[200],
+          //color: Colors.grey[200],
           borderRadius: BorderRadius.circular(12),
         ),
         child: Image.asset(
           iconPath,
-          color: Colors.grey[600],
+          //color: Colors.grey[600],
         ),
       ),
     );

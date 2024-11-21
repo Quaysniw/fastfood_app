@@ -6,8 +6,8 @@ class DonutTab extends StatelessWidget {
   // donut listesi
   List donutSatis = [
     // [ donutCesit, donutFiyat, donutRenk, donutGorsel ]
-    ["Üzümlü", "45", Colors.pink, "assets/images/urunler/donutlar/uzumlu_donut.png"],
-    ["Çilekli", "45", Colors.red, "assets/images/urunler/donutlar/cilekli_donut.png"],
+    ["Üzümlü", "45", Colors.red, "assets/images/urunler/donutlar/uzumlu_donut.png"],
+    ["Çilekli", "45", Colors.pink, "assets/images/urunler/donutlar/cilekli_donut.png"],
     ["Beyaz Çikolatalı", "40", Colors.blueGrey, "assets/images/urunler/donutlar/beyaz_cikolatali_donut.png"],
     ["Çikolatalı", "40", Colors.brown, "assets/images/urunler/donutlar/cikolatali_donut.png"],
     ["Dondurmalı", "35", Colors.blue, "assets/images/urunler/donutlar/dondurmali_donut.png"],

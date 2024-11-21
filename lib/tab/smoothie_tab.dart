@@ -6,7 +6,7 @@ class SmoothieTab extends StatelessWidget {
   // smoothie listesi
   List smoothieSatis = [
     // [smoothieCesit, smoothieFiyat, smoothieRenk, smoothieGorsel ]
-    ["Pastırmalı Pizza", "180", Colors.orange, "assets/images/urunler/smoothie/portakalli_smoothie.png"],
+    ["Portakkalı", "180", Colors.orange, "assets/images/urunler/smoothie/portakalli_smoothie.png"],
     ["Misket Limonlu", "180", Colors.lime, "assets/images/urunler/smoothie/misket_limonlu_smoothie.png"],
     ["Elmalı", "110", Colors.green, "assets/images/urunler/smoothie/elmali_smoothie.png"],
     ["Çilekli", "110", Colors.pink, "assets/images/urunler/smoothie/cilekli_smoothie.png"],

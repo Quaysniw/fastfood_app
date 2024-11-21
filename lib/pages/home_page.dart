@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/tab/burger_tab.dart';
 import 'package:gelmedenal/tab/donut_tab.dart';
+import 'package:gelmedenal/tab/burger_tab.dart';
+import 'package:gelmedenal/tab/smoothie_tab.dart';
 import 'package:gelmedenal/tab/waffle_tab.dart';
 import 'package:gelmedenal/tab/pizza_tab.dart';
-import 'package:gelmedenal/tab/smoothie_tab.dart';
 import 'package:gelmedenal/util/tab_widget.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +15,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
 
-  // my tabs
+  // urun tabs
   List<Widget> urunTab = const [
     // donut tab
     TabWidget(
@@ -32,9 +32,9 @@ class _HomePageState extends State<HomePage> {
       iconPath: 'assets/icons/urunler/smoothie.png',
     ),
 
-    // pan tab
+    // waffle tab
     TabWidget(
-      iconPath: 'assets/icons/urunler/pancakes.png',
+      iconPath: 'assets/icons/urunler/waffle.png',
     ),
 
     // pizza tab
@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
       length: urunTab.length,
       child: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.transparent,
+          //backgroundColor: Colors.transparent,
           elevation: 0,
           leading: Padding(
             padding: const EdgeInsets.only(left: 24.0),
