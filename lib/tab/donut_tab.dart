@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/util/donut_tile.dart';
+import 'package:gelmedenal/widgets/utils/donut_tile.dart';
 
 class DonutTab extends StatelessWidget {
 

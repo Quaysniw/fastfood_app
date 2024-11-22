@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/util/waffle_tile.dart';
+import 'package:gelmedenal/widgets/utils/waffle_tile.dart';
 
 class WaffleTab extends StatelessWidget {
 

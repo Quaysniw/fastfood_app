@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DonutListe extends StatelessWidget {
-  final donutRenk;
+  final dynamic donutRenk;
   final String donutCesit;
   final String donutFiyat;
   final String donutGorsel;

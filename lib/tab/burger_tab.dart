@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/util/burger_tile.dart';
+import 'package:gelmedenal/widgets/utils/burger_tile.dart';
 
 class BurgerTab extends StatelessWidget {
 

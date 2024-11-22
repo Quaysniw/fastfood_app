@@ -4,7 +4,7 @@ import 'package:gelmedenal/tab/burger_tab.dart';
 import 'package:gelmedenal/tab/smoothie_tab.dart';
 import 'package:gelmedenal/tab/waffle_tab.dart';
 import 'package:gelmedenal/tab/pizza_tab.dart';
-import 'package:gelmedenal/util/tab_widget.dart';
+import 'package:gelmedenal/widgets/tab_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
