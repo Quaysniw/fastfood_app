@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/widgets/utils/pizza_tile.dart';
+import 'package:gelmedenal/tabs/urunler/pizza/pizza_tile.dart';
 
 class PizzaTab extends StatelessWidget {
 

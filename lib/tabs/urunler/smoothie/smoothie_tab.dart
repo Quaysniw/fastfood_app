@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/widgets/utils/smoothie_tile.dart';
+import 'package:gelmedenal/tabs/urunler/smoothie/smoothie_tile.dart';
 
 class SmoothieTab extends StatelessWidget {
 
