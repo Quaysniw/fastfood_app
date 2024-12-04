@@ -41,7 +41,7 @@ class SmoothieListe extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$smoothieFiyat',
+                    '$smoothieFiyat₺',
                     style: TextStyle(
                       color: smoothieRenk[800],
                       fontWeight: FontWeight.bold,

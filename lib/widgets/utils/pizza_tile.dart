@@ -41,7 +41,7 @@ class PizzaListe extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$pizzaFiyat',
+                    '$pizzaFiyat₺',
                     style: TextStyle(
                       color: pizzaRenk[800],
                       fontWeight: FontWeight.bold,

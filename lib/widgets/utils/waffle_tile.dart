@@ -41,7 +41,7 @@ class WaffleListe extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$waffleFiyat',
+                    '$waffleFiyat₺',
                     style: TextStyle(
                       color: waffleRenk[800],
                       fontWeight: FontWeight.bold,

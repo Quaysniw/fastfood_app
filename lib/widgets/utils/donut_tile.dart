@@ -41,7 +41,7 @@ class DonutListe extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$donutFiyat',
+                    '$donutFiyat₺',
                     style: TextStyle(
                       color: donutRenk[800],
                       fontWeight: FontWeight.bold,

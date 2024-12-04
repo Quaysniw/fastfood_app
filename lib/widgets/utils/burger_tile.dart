@@ -41,7 +41,7 @@ class BurgerListe extends StatelessWidget {
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\₺$burgerFiyat',
+                    '$burgerFiyat₺',
                     style: TextStyle(
                       color: burgerRenk[800],
                       fontWeight: FontWeight.bold,
