@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:gelmedenal/tab/donut_tab.dart';
-import 'package:gelmedenal/tab/burger_tab.dart';
-import 'package:gelmedenal/tab/smoothie_tab.dart';
-import 'package:gelmedenal/tab/waffle_tab.dart';
-import 'package:gelmedenal/tab/pizza_tab.dart';
+import 'package:gelmedenal/tabs/donut_tab.dart';
+import 'package:gelmedenal/tabs/burger_tab.dart';
+import 'package:gelmedenal/tabs/smoothie_tab.dart';
+import 'package:gelmedenal/tabs/waffle_tab.dart';
+import 'package:gelmedenal/tabs/pizza_tab.dart';
 import 'package:gelmedenal/widgets/tab_widget.dart';
 
 class HomePage extends StatefulWidget {
