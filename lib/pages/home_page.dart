@@ -123,7 +123,7 @@ class _HomePageState extends State<HomePage> {
                 // smoothie sayfası
                 SmoothieTab(),
 
-                // pancake sayfası
+                // waffle sayfası
                 WaffleTab(),
 
                 // pizza sayfası
